@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "Questrial";
+}
+
+#main{
+    position: relative;;
+    width: 100%;
+    height: 100%;
+    background-image: url(bg.gif);
+    background-position: 100% 100%;
+    background-size: cover;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+#nav{
+    padding: 0 80px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+#navlinks{
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translate(-50%,-50%);
+}
+#nav i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+#nav i:hover {
+    background-color: lightblue;
+}
+
+#navlinks a{
+    position: relative;
+    margin-left: 25px;
+    margin-top: 40px;
+    color: #fefefe;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    
+}
+
+
+
+#nav h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #FFFF;
+    border: 3px solid #FFFF;
+}
+
+#nav h5:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    /* background-color: lightblue; */
+}
+
+#main #hero{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 40%;
+    color: hsl(28, 35%, 92%);
+    left: 10%;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+
+#hero h1:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+#hero #h6 #sub2{
+    /* font-size:xx-large; */
+    font-weight: 800;
+}
+
+#hero h6{
+    display: flex;
+}
+#hero h6 #sub1{
+    line-height: 30px;
+    font-size: 40px;
+}
+#hero h1{
+    font-size: 90px;
+    line-height: 1;
+    margin-top: 10px;
+
+}
+#subhero{
+    display: flex;
+    margin-top: 10px;
+}
+
+#subhero #line{
+    width: 120px;
+    height: 3px;
+    background-color: #fff; 
+}
+#subhero p{
+    width: 50%;
+    font-size: 12px;
+    margin-top: -2px;
+    margin-left: 9px;
+}
+#bottom{
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 20%;
+    width: 50%;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding-left: 20px;
+}
+
+#bottom .sec{
+    position: relative;
+    padding: 20px;
+}
+
+#bottom h3:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#bottom #cube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(52, 50, 50);
+}
+#bottom .sec p{
+    margin-right: 3%;
+    margin-left: 3%;
+    opacity: .5;
+    font-size: 12px;
+    font-weight: 500;
+}
+#mid{
+    
+    padding-right: 3%;
+    padding-left: 3%;
+    border-left: 3px solid rgb(63, 62, 62);
+    border-right: 3px solid  rgb(63, 62, 62);
+}

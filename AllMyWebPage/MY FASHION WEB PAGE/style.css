@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url(https://fonts.bunny.net/css?family=estonia:400);
+@import url(https://fonts.bunny.net/css?family=adamina:400|allison:400);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+html,body{
+    user-select: none;
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+}
+
+
+
+#main #mtext{
+    width: 4px;
+    position: absolute;
+    top: 50%;
+    left: 450px;
+    transform: translate(-25%,-50%);
+    z-index: 2;
+}
+#mtext h1{
+    line-height: 0.9;
+    white-space: nowrap;
+    font-size: 12vw;
+    font-family: 'Allison', handwriting;
+    font-weight:lighter;
+    color: rgb(172, 168, 168);
+}
+#mtext h3{
+    line-height: 1;
+    user-select: none;
+    white-space: nowrap;
+    font-size: 5vw;
+    font-family: 'Estonia', handwriting;
+    font-weight: 50;
+    color: rgb(172, 168, 168);
+    position: relative;
+    left: 110px;
+
+    
+}
+
+#left{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+}
+#nav{
+    font-family: "Gilroy-Italic" , sans-serif;
+    display: flex;
+    width: 100%;
+    padding: 60px 70px;
+    gap: 100px;
+    align-items: center;
+
+}
+
+.logo{
+    position: relative;
+    left: 25px;
+    bottom: 25px; 
+}
+
+.menlogo{
+    position: relative;
+    right: 15px;
+    bottom: 25px;
+}
+
+.femalelogo{
+    position: relative;
+    left: 1opx;
+    bottom: 25px;
+}
+
+.childlogo{
+    position: relative;
+    left: 1opx;
+    bottom: 20px;
+}
+
+
+#nav h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+#nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+#centreimg{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: 50%;
+    background-image: url(images/men.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#centreimg #text{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    color: white;
+    bottom: -30%;
+}
+
+#text #parts{
+    width: 30%;
+}
+#parts h5{
+    margin-bottom: 20px;
+    font-size: 500;
+}
+
+#text #para{
+    width: 70%;
+}
+#para #p{
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    /* margin: bottom 40px; */
+}
+#scroll{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0%;
+    left: 10%;
+    transform-origin: 0% 50%;
+    transform: rotate(-90deg);
+}
+
+#scroll #line{
+    width: 150px;
+    height: 2px;
+    background-color: white;
+}
+#scroll h4{
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+}
+
+#centre{
+    position: relative;
+    left: 115px;
+    width: 42%;
+    height: 100%;
+    background-image: url(images/girl.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    
+}
+
+#centre #card{
+    display: flex;
+    width: 260px;
+    height: 170px;
+    background-color: black;
+    position: absolute;
+    bottom: 10%;
+    right: -4%;
+    z-index: 5;
+}
+
+#card #cicons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 800;
+    font-weight: 800;
+    height: 100%;
+    width: 25%;
+    background-color: aliceblue;
+    z-index: 1;
+
+}
+
+#card #cimage{
+    height: 100%;
+    width: 75%;
+    background-image: url(images/eyes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#right{
+    width: 5%;
+    height: 100%;
+    background-color:#4a4547;
+    position: relative;
+    left: 116px;
+
+}
+
+#right #relement{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    width: 100%;
+    height: 70%;
+    color: white;
+}
+
+#search{
+    font-size: 25px;
+    font-weight: 500;
+    z-index: 2;
+    color: black;
+}
+
+#relement #rlinks{   
+    color: black;
+    display: flex;
+    gap: 70px;
+    transform:translatey(-150px) rotate(90deg);
+}
+
+#rlinks a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
